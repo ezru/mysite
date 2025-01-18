@@ -1,0 +1,43 @@
+{% extends "fablab/base.html" %}
+
+{% block content %}
+
+    <div class="container">
+
+        <div style="height: 100px;">
+            <div class="h-25 text-center"><h1>{{ user.firstName}} {{user.surName }}</h1></div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                Date
+            </div>
+            <div class="col">
+                Start time
+            </div>
+            <div class="col">
+                End time
+            </div>
+        </div>
+
+        {% if userBooking %}
+            {% for booking in userBooking %}
+                <div class="row">
+                <div class="col">
+                    {{booking.slotDate}}
+                </div>
+                <div class="col">
+                    {{booking.slotStatTime}}
+                </div>
+                <div class="col">
+                    {{booking.slotEndTime}}
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+            <p> No booking available. </p>
+        {% endif %}
+
+    </div>
+
+{% endblock %}

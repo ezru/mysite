@@ -1,0 +1,31 @@
+{% extends "fablab/base.html" %}
+
+{% block content %}
+
+    <div class="container">
+
+
+        <div style="height: 100px;">
+            <div class="h-25 text-center"><h1>Fablab Booking </h1></div>
+        </div>
+        <div class= "row gx-5">
+            <div class="col-2"></div>
+                {% for day in weekDays %}
+                    <div class="col-2 text-center bg-info text-white border-white rounded-top border">
+                        <h5>{{ day.0 }} <br />
+                        {{ day.1.date }}</h5>
+                    </div>
+                {% endfor %}
+        </div>
+        {% for time in timeOfDay %}
+            <div class= "row gx-5">
+                <div class="col-2 text-center bg-info text-white border-white rounded-left border"><h5>{{ time }}</h5></div>
+                    {% for x in '12345' %}
+                        <div class="col-2 text-center bg-secondary text-white border-white border">
+                        </div>
+                    {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

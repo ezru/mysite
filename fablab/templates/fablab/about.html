@@ -1,0 +1,48 @@
+{% extends "fablab/base.html" %}
+
+{% load static %}
+{% block content %}
+
+ <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">All About Us</h1>
+        <p class="lead text-muted">We are based in a School in Jerez de la Frontera. The lab is currently used manily for students of the school ...</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2">More details</a>
+          <a href="#" class="btn btn-secondary my-2">Get in touch</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="{% static 'fablab/gru.png' %}" alt="My image" width="250" height="250">
+        <h2>Da Boss</h2>
+        <p>I am the Boss, as mean as can be.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="{% static 'fablab/minion1.png' %}" alt="My image" width="250" height="250">
+        <h2>Worker</h2>
+        <p>I like making things that might not work.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img src="{% static 'fablab/minion2.png' %}" alt="My image" width="250" height="250">
+        <h2>Another worker</h2>
+        <p>I like making things that blow up.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+{% endblock %}
