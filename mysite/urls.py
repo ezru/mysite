@@ -18,7 +18,6 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path('rasduino/', include('rasduino.urls')),
     path('moneymanage/', include('moneymanage.urls')),
     path('fablab/', include('fablab.urls')),
     url(r'^admin/', admin.site.urls),

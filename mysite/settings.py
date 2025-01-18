@@ -31,7 +31,6 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'rasduino.apps.RasduinoConfig',
     'fablab.apps.FablabConfig',
     'moneymanage.apps.MoneymanageConfig',
     'django.contrib.admin',
